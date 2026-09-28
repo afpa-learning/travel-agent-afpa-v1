@@ -1,0 +1,15 @@
+[
+  { "code": "AF", "name": "Air France", "country": "France", "alliance": "SkyTeam" },
+  { "code": "EK", "name": "Emirates", "country": "Émirats arabes unis", "alliance": null },
+  { "code": "NH", "name": "ANA (All Nippon Airways)", "country": "Japon", "alliance": "Star Alliance" },
+  { "code": "DL", "name": "Delta Air Lines", "country": "États-Unis", "alliance": "SkyTeam" },
+  { "code": "BA", "name": "British Airways", "country": "Royaume-Uni", "alliance": "Oneworld" },
+  { "code": "TP", "name": "TAP Air Portugal", "country": "Portugal", "alliance": "Star Alliance" },
+  { "code": "AT", "name": "Royal Air Maroc", "country": "Maroc", "alliance": "Oneworld" },
+  { "code": "LH", "name": "Lufthansa", "country": "Allemagne", "alliance": "Star Alliance" },
+  { "code": "AZ", "name": "ITA Airways", "country": "Italie", "alliance": "SkyTeam" },
+  { "code": "TG", "name": "Thai Airways", "country": "Thaïlande", "alliance": "Star Alliance" },
+  { "code": "AC", "name": "Air Canada", "country": "Canada", "alliance": "Star Alliance" },
+  { "code": "IB", "name": "Iberia", "country": "Espagne", "alliance": "Oneworld" },
+  { "code": "QF", "name": "Qantas", "country": "Australie", "alliance": "Oneworld" }
+]

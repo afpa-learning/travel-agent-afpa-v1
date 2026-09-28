@@ -1,0 +1,17 @@
+[
+  { "airport_code": "CDG", "name": "Paris Charles de Gaulle", "city": "Paris", "country": "France", "timezone": "Europe/Paris" },
+  { "airport_code": "JFK", "name": "John F. Kennedy International", "city": "New York", "country": "États-Unis", "timezone": "America/New_York" },
+  { "airport_code": "HND", "name": "Tokyo Haneda", "city": "Tokyo", "country": "Japon", "timezone": "Asia/Tokyo" },
+  { "airport_code": "LIS", "name": "Lisbonne Humberto Delgado", "city": "Lisbonne", "country": "Portugal", "timezone": "Europe/Lisbon" },
+  { "airport_code": "FCO", "name": "Rome Fiumicino", "city": "Rome", "country": "Italie", "timezone": "Europe/Rome" },
+  { "airport_code": "BKK", "name": "Bangkok Suvarnabhumi", "city": "Bangkok", "country": "Thaïlande", "timezone": "Asia/Bangkok" },
+  { "airport_code": "DXB", "name": "Dubaï International", "city": "Dubaï", "country": "Émirats arabes unis", "timezone": "Asia/Dubai" },
+  { "airport_code": "YUL", "name": "Montréal-Trudeau", "city": "Montréal", "country": "Canada", "timezone": "America/Toronto" },
+  { "airport_code": "RAK", "name": "Marrakech Ménara", "city": "Marrakech", "country": "Maroc", "timezone": "Africa/Casablanca" },
+  { "airport_code": "LHR", "name": "Londres Heathrow", "city": "Londres", "country": "Royaume-Uni", "timezone": "Europe/London" },
+  { "airport_code": "BCN", "name": "Barcelone El Prat", "city": "Barcelone", "country": "Espagne", "timezone": "Europe/Madrid" },
+  { "airport_code": "SYD", "name": "Sydney Kingsford Smith", "city": "Sydney", "country": "Australie", "timezone": "Australia/Sydney" },
+  { "airport_code": "SIN", "name": "Singapour Changi", "city": "Singapour", "country": "Singapour", "timezone": "Asia/Singapore" },
+  { "airport_code": "LAX", "name": "Los Angeles International", "city": "Los Angeles", "country": "États-Unis", "timezone": "America/Los_Angeles" },
+  { "airport_code": "FRA", "name": "Francfort", "city": "Francfort", "country": "Allemagne", "timezone": "Europe/Berlin" }
+]
