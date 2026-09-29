@@ -6,7 +6,7 @@ import os
 
 HISTORY: dict[str, list[dict]] = {}
 HISTORY_LOCK = threading.Lock()
-MAX_MESSAGES = 20  # limite pour ne pas exploser le contexte du modèle
+MAX_MESSAGES: int = int(os.environ.get("MCP_MAX_RESULTS", "20"))  # limite pour ne pas exploser le contexte du modèle
 
 
 def get_conv_id() -> str:
