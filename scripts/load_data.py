@@ -9,6 +9,7 @@ data/*.json et crée les index recommandés (section 3.4 du cahier des charges).
 Usage :
     pip install "pymongo[srv]"
     python scripts/load_data.py
+    python scripts/load_data.py --reset    # peuple la base (vide chaque collection avant)
     python scripts/load_data.py --uri "mongodb://localhost:27017" --db travel_agent_db
 """
 
