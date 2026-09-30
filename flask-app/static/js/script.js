@@ -16,8 +16,6 @@ const chatInput = document.getElementById('chatInput');
 const sendBtn = document.getElementById('sendBtn');
 const newConversation = document.getElementById('newConversation');
 
-const converter = new showdown.Converter();
-
 function scrollDown(){
   chatScroll.scrollTop = chatScroll.scrollHeight;
 }
@@ -114,15 +112,6 @@ async function fetchCallTool() {
   }
 }
 
-function cleanResponse(text) {
-  text=text.replaceAll("| | |\n|---|---|\n| ",""); 
-  text=text.replaceAll("|\n\n","<br><br>");
-  text=text.replaceAll("|\n|","<br>"); 
-  text=text.replaceAll("|",":");
-  
-  return text;
-}
-
 async function fetchAsk(demand) {
   showTyping();
   try {
@@ -135,7 +124,7 @@ async function fetchAsk(demand) {
     });
     const data = await res.json();
     
-    const html = converter.makeHtml(cleanResponse(data.reply));
+    const html = marked.parse(data.reply);
     addAssistantHTML(html);
     const t = document.getElementById('typingIndicator');
     if(t) t.remove();
