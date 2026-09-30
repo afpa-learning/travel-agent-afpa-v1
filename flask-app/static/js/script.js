@@ -59,9 +59,9 @@ function showTyping(){
 function clearConversation() {
   chatScroll.innerHTML="";
   chatInput.value='';
-  chatInput.focus();
   scrollDown();
-  
+  fetchApiClearHistory();
+  chatInput.focus();
 }
 
 const QUESTIONS = {
@@ -88,6 +88,8 @@ chatInput.addEventListener('keydown', (e) => {
 
 document.querySelectorAll('.suggestion').forEach(btn => {
   btn.addEventListener('click', () => {
+    
+    clearConversation();
     const key = btn.dataset.q;
     handleSend(QUESTIONS[key]);
   });
@@ -145,7 +147,17 @@ async function fetchAsk(demand) {
   }
 }
 
-
+async function fetchApiClearHistory() {
+   try {
+       const response = await fetch("/api/history/reset");
+       if (!response.ok) {
+           addSystemNotice(`Erreur HTTP : ${response.status}`);
+       }
+       const data = await response.json();
+   } catch (error) {
+       addSystemNotice("Erreur lors de la récupération : "+error);
+   }
+} 
 async function fetchApiStatus() {
    try {
        const response = await fetch("/api/status");

@@ -10,7 +10,7 @@ Routes:
 
 from flask import Flask, render_template, request, jsonify
 from pathlib import Path
-from history import get_conv_id,load_history, save_history
+from history import get_conv_id,load_history, save_history, clear_history
 import sys
 import os
 
@@ -102,5 +102,12 @@ def call_tool():
 
     return jsonify({"result": result})
 
+@app.route("/api/history/reset")
+def reset_history():
+    conv_id = get_conv_id()
+    if conv_id:
+        clear_history(conv_id)
+    return jsonify({"ok": True})
+    
 if __name__ == '__main__':
    app.run(debug=True)

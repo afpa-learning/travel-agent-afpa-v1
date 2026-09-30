@@ -27,3 +27,7 @@ def save_history(conv_id: str, history: list[dict]):
         history.pop(0)
     with HISTORY_LOCK:
         HISTORY[conv_id] = history
+
+def clear_history(conv_id: str):
+    with HISTORY_LOCK:
+        HISTORY.pop(conv_id, None)
