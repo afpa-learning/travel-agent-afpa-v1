@@ -93,3 +93,7 @@ des fichiers JSON).
 
 > Les données sont **synthétiques**, générées à des fins de démonstration
 > uniquement, et ne reflètent pas de disponibilités ou tarifs réels.
+
+## Licence
+
+Projet pédagogique AFPA.
